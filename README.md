@@ -1,3 +1,26 @@
+## Docker Demo for SMT
+This is the docker demo for a MEANJS app for the OW System Maintenance Team.
+
+## Before you Begin
+* Download docker from [Docker Official Website](https://www.docker.com/).
+* Remember that docker is fully available for Windows 10, for Windows 7 you'll need to configure a workaround with the docker tools suite.
+* Install git for windows [Git for Windows](https://git-scm.com/download/win). Remember to properly install it and verify that is included in the environment variables.
+
+## Running the app
+* After docker is configured correctly you'll need to clone the project with git:
+```bash
+$ git clone https://github.com/rigelreyes/docker-mean-demo
+```
+* Enter to the root directory of the project and with the docker service running on windows run the following command:
+```bash
+$ docker-compose up -d
+```
+* Go to `http://localhost:3000` and start exploring the application.
+
+## Recommended Branching and Commit Conventions
+
+## Adding value to the app
+
 [![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/meanjs/mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
