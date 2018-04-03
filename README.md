@@ -16,10 +16,62 @@ $ git clone https://github.com/rigelreyes/docker-mean-demo
 $ docker-compose up -d
 ```
 * Go to `http://localhost:3000` and start exploring the application.
+* To bring down the services press Ctrl+C and then:
+```bash
+$ docker-compose down
+```
 
 ## Recommended Branching and Commit Conventions
+Guidelines of the commit message:
+- Maintain the history compact but descriptive.
+- Clear and concise but substantial.
+- Update briefly within one 50 characters per subject.
+- Add richness to the context adding types and scope.
+- Promotes uniformity across developers and teams.
+- Updates and changes are wrapped without losing context.
+- Body if and only if the subject is not self-explanatory.
 
-## Adding value to the app
+Format of the commit message:
+
+<ticket_number> (required)
+<type>(<scope>): <subject> (required)
+<BLANK LINE> (optional)
+<body> (optional)
+<BLANK LINE> (optional)
+<footer> (optional)
+Any line of the commit message cannot be longer 100 characters! This allows the message to be easier to read on github as well as in various git tools.
+
+Subject line
+Subject line contains succinct description of the change.
+
+Allowed <type>
+1. feat (feature)
+2. fix (bug fix)
+3. docs (documentation)
+4. style (formatting, missing semi colons, …)
+5. refactor (retyping for performance, migration or update)
+6. test (when adding missing tests)
+7. chore (maintain)
+
+Allowed <scope>
+Scope is the logical location for any type of task instead of the physical location of a file. It saves time knowing which artifact was impacted. 
+Scope could be anything specifying place of the commit change. For example $location, $browser, $compile, $rootScope, ngHref, ngClick, ngView, etc...
+Flexibility for pointing scope depending the application.
+
+<subject> text
+Succinct message
+Less than 50 characters
+optional: use imperative, present tense: “change” not “changed” nor “changes”
+optional: don't capitalize first letter
+optional: no dot (.) at the end
+
+
+use only if necessary: <body> text
+avoid redundant description
+optional: just as in use imperative, present tense: “change” not “changed” nor “changes”
+optional: includes motivation for the change and contrasts with previous behavior
+optional: paste a link instead of the body (jira, projectplace o confluence)
+
 
 [![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
 

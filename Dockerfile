@@ -26,8 +26,6 @@ RUN apt-get update -q  \
  make \
  build-essential \
  libkrb5-dev \ 
- libjpeg62 \
- libjpeg62-dev \
  libpng12-dev \
  libpng12-0 \
  sudo \
